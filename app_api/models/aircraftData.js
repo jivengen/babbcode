@@ -11,23 +11,23 @@ var ClimbSchema = new mongoose.Schema({
 mongoose.model('climbdata', ClimbSchema, 'climbdata');
 
 var TakeoffSchema = new mongoose.Schema({
-	weight: Number,
 	flaps: Number,
-	vr: Number,
-	v2: Number,
-	atOrBelow20: Boolean,
 	above20: Boolean,
+	weight: Number,
 	altitude: Number,
+	Vr: Number,
+	V2: Number
+	
 });
 
-mongoose.model('TakeoffData', TakeoffSchema, 'TakeoffData');
+mongoose.model('takeoffdata', TakeoffSchema, 'takeoffdata');
 
 var LandingSchema = new mongoose.Schema({
 	weight: Number,
 	flaps: Number,
-	vApp: Number,
-	vRef: Number,
-	vGa: Boolean,
+	Vapp: Number,
+	Vref: Number,
+	Vga: Number,
 });
 
-mongoose.model('LandingData', LandingSchema, 'LandingData');
+mongoose.model('landingdata', LandingSchema, 'landingdata');

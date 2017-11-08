@@ -14,7 +14,7 @@ router.get('/climbdata/:weight', ctrlAirplaneData.climbDataReadOne);
 router.get('/climbdata', ctrlAirplaneData.climbDataReadAll);
 
 /* LANDING DATA */
-router.get('/landingData/:weight', ctrlAirplaneData.landingDataReadOne);
+router.get('/landingdata/:weight', ctrlAirplaneData.landingDataReadOne);
 
 /* AIRPORT DATA */
 router.get('/airportData', ctrlAirportData.airportDataReadAll);
